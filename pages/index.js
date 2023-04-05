@@ -1,8 +1,10 @@
+import React from 'react';
 import Head from 'next/head';
 import Typewriter from 'typewriter-effect';
-import { BsFillMoonStarsFill, BsCodeSlash, BsPersonWorkspace } from 'react-icons/bs';
+import { BsCodeSlash, BsPersonWorkspace } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillMail } from 'react-icons/ai';
 import { TiTick } from 'react-icons/ti';
+import { MdDesignServices } from 'react-icons/md'
 import Image from "next/image";
 import avatar from '../public/avatar.png';
 import { skills } from '@/data';
@@ -18,11 +20,10 @@ export default function Home() {
 
       <main className="bg-white px-10 font-mono">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className=" py-10 mb-12 flex justify-between">
             <h1 className='text-2xl'>Developed by Noel</h1>
             <ul className="flex items-center">
-              <li><BsFillMoonStarsFill className="cursor-pointer text-2xl" />
-              </li>
+              
               <li>
                 <a className="bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-4 py-2 rounded-md ml-8"
                   href="#">About Me</a>
@@ -66,6 +67,18 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section className="shadow-lg shadow-gray-500/50">
+          <div className="text-7xl flex justify-center text-gray-600">
+            <MdDesignServices />
+          </div>
+          <div className="text-md">
+            <h3 className="text-3xl py-5 flex justify-center">Services</h3>
+           
+            
+          </div>
+        </section>
+
         <section className="shadow-lg shadow-teal-500/50">
           <div className="text-7xl flex justify-center text-gray-600">
             <BsCodeSlash />
@@ -94,9 +107,8 @@ export default function Home() {
           </div>
         </section>
 
-
-        <section className="shadow-lg shadow-gray-500/50">
-          <div className="text-7xl flex justify-center text-gray-600 py-1">
+        <section className="shadow-lg shadow-teal-500/50 ">
+          <div className="text-7xl flex justify-center text-gray-600">
             <BsPersonWorkspace />
           </div>
           <div className="text-md">
@@ -110,8 +122,49 @@ export default function Home() {
               <p className="text-md text-center py-2 leading-8 text-gray-800">
               Here are my most recent projects:
             </p>
-          </div>
-        </section>
+            </div>
+            <div className="">
+        <div className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-2 py-20 pb-40">
+          {/* Single card */}
+          <a
+            href="https://skillmatch-jobs.netlify.app/"
+            className="w-full block shadow-2xl p-2"
+          >
+            <div className="relative overflow-hidden p-7 bottom-10">
+              <img
+                src="/SkillMatch.gif"
+                alt="skillmatch"
+                className="transform hover:scale-125 transition duration-2000 ease-out"
+              />
+              <h3 className="absolute top-5 left-2 text-white text-xl bg-teal-500 rounded-md px-3">
+                SkillMatch
+              </h3>
+              <h4 className="absolute left-2 bottom-1 text-gray-500 font-bold text-xs">
+                An application that allows a user to search for jobs based on their skills.
+              </h4>
+            </div>
+          </a>
+          <a
+            href="https://ngalvin1991.github.io/Code-Quiz/"
+            className="w-full block shadow-2xl p-2"
+          >
+            <div className="relative overflow-hidden  bottom-10">
+              <img
+                src="/codequiz2.gif"
+                alt="skillmatch"
+                className="transform hover:scale-125 transition duration-2000 ease-out "
+              />
+              <h3 className="absolute top-5 left-2 text-white text-xl bg-teal-500 rounded-md px-3">
+                Coding Quiz
+              </h3>
+              <h4 className="absolute left-2 bottom-1 text-gray-500 font-bold text-xs">
+              A browser run application allowing the user to answer a variety of questions about coding.
+              </h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
       </main>
     </div>
