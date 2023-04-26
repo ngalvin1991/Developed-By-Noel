@@ -2,8 +2,36 @@
 @tailwind components; 
 @tailwind utilities;
 
-@font-face {
-  font-family: "burtons";
-  src: url('../public/Burtons.otf')
+
+html {
+  scroll-behavior: smooth;
 }
- 
+
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-gray-800 tracking-wide
+    
+  }
+
+  h1, h2, h2, h4, h5, h6 {
+    @apply font-semibold
+  }
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl
+}
+
+li {
+  @apply cursor-pointer
+}
+
+button {
+  @apply shadow-xl shadow-teal-700 rounded-xl uppercase bg-gradient-to-r from-gray-400 to-gray-800 text-white
+}
+
+}
