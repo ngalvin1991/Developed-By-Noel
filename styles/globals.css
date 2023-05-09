@@ -31,7 +31,7 @@ li {
 }
 
 button {
-  @apply shadow-xl shadow-teal-700 rounded-xl uppercase bg-gradient-to-r from-gray-400 to-gray-800 text-white
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-teal-600 text-white
 }
 
 }

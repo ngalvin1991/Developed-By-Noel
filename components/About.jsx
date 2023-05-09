@@ -11,7 +11,7 @@ const About = () => {
                     
                     
                 
-                    <p className="py-2 text-gray-600">So I'm Noel and I'm from Croydon in South London.</p>
+                    <p className="py-2 text-gray-600">So... I'm Noel and I'm from Croydon in South London.</p>
                     <p className="py-2 text-gray-600">My web development career has only really just begun after taking a Front-End Web Development
                         course in 2022, but I have loved anything to do with computers since I was little.
                     </p>
