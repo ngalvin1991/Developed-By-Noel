@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillMail } from "react
 
 const Main = () => {
     return (
-        <div className=" w-full h-screen text-center font-mono">
+        <div id="home" className=" w-full h-screen text-center font-mono">
             <div className=" w-full h-full mx-auto px-4 p-2 flex justify-center items-center">
             
                 <div>

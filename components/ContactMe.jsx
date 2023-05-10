@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ContactMe = () => {
     return (
-        <div className="w-full lg:h-screen">
+        <div id="contactme" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
                 <h2 className="text-xl tracking-widest uppercase text-teal-800">
                     Contact Me
