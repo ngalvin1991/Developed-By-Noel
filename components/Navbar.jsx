@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <div className={shadow ? "fixed bg-slate-100 w-full h-30 shadow-xl shadow-teal-700/25 z-[100] font-mono" : "fixed w-full h-30 z-[100] font-mono"}>
-            <div className="flex justify-between items-center w-full h-full px-2 ">
+            <div className="flex justify-between items-center w-full h-full px-5 ">
                 <Link href='/'>
                     <Image src="/../public/nbavatar.png" alt="logo" width={120} height={50} className="cursor-pointer" />
                 </Link>
@@ -88,23 +88,23 @@ const Navbar = () => {
                     <div className="py-4 flex-col">
                         <ul className="uppercase">
                             <Link href="/">
-                                <li className="py-4 text-sm">Home</li>
+                                <li onClick={()=> setNav(false)} className="py-4 text-sm">Home</li>
                             </Link>
 
-                            <Link href="/">
-                                <li className="py-4 text-sm">About Me</li>
+                            <Link href='/#about'>
+                                <li onClick={()=> setNav(false)} className="py-4 text-sm">About Me</li>
                             </Link>
 
-                            <Link href="/">
-                                <li className="py-4 text-sm">Skills</li>
+                            <Link href='/#skills'>
+                                <li onClick={()=> setNav(false)} className="py-4 text-sm">Skills</li>
                             </Link>
 
-                            <Link href="/">
-                                <li className="py-4 text-sm">Projects</li>
+                            <Link href='/#projects'>
+                                <li onClick={()=> setNav(false)} className="py-4 text-sm">Projects</li>
                             </Link>
 
-                            <Link href="/">
-                                <li className="py-4 text-sm">Contact Me</li>
+                            <Link href='/#contactme'>
+                                <li onClick={()=> setNav(false)} className="py-4 text-sm">Contact Me</li>
                             </Link>
                         </ul>
 
@@ -112,16 +112,24 @@ const Navbar = () => {
                             <p className="uppercase tracking-widest text-teal-700">Follow Me</p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                 <div className="rounded-full shadow-lg shadow-teal-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiFillGithub />
+                                <Link href='/https://github.com/ngalvin1991'>
+                                        <AiFillGithub className="text-2xl" />
+                                        </Link>
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-teal-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiFillLinkedin />
+                                <Link href='/https://www.linkedin.com/in/noel-galvin/'>
+                                        <AiFillLinkedin className="text-2xl" />
+                                        </Link>
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-teal-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiFillInstagram />
+                                <Link href='/https://www.instagram.com/noelgalvin/'>
+                                        <AiFillInstagram className="text-2xl" />
+                                        </Link>
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-teal-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                    <AiFillMail />
+                                <a href='mailto:noel@developedbynoel.com'>
+                                        <AiFillMail className="text-2xl" />
+                                        </a>
                                 </div>
                             </div>
                         </div>

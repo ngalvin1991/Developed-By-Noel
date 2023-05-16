@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Typewriter from 'typewriter-effect';
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillMail } from "react-icons/ai";
 
@@ -38,16 +39,24 @@ const Main = () => {
                     </p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                         <div className="rounded-full shadow-lg shadow-teal-800  p-2 cursor-pointer hover:scale-105 ease-in duration-500">
-                            <AiFillGithub />
+                        <Link href='/https://github.com/ngalvin1991'>
+                                        <AiFillGithub className="text-2xl" />
+                                        </Link>
                         </div>
                         <div className="rounded-full shadow-lg shadow-teal-800 p-2 cursor-pointer hover:scale-105 ease-in duration-500">
-                            <AiFillLinkedin />
+                        <Link href='/https://www.linkedin.com/in/noel-galvin/'>
+                                        <AiFillLinkedin className="text-2xl" />
+                                        </Link>
                         </div>
                         <div className="rounded-full shadow-lg shadow-teal-800 p-2 cursor-pointer hover:scale-105 ease-in duration-500">
-                            <AiFillInstagram />
+                        <Link href='/https://www.instagram.com/noelgalvin/'>
+                                        <AiFillInstagram className="text-2xl" />
+                                        </Link>
                         </div>
                         <div className="rounded-full shadow-lg shadow-teal-800 p-2 cursor-pointer hover:scale-105 ease-in duration-500">
-                            <AiFillMail />
+                        <a href='mailto:noel@developedbynoel.com'>
+                                        <AiFillMail className="text-2xl" />
+                                        </a>
                         </div>
                     </div>
                 </div>
